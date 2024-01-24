@@ -23,7 +23,7 @@ const MainComponent = () => {
   
       setUser({ ...userData, repos: reposData });
     } catch (error) {
-      console.error('Greška prilikom dohvaćanja podataka:', error.message);
+      console.error('Error from pull out the data:', error.message);
       setUser(null); 
   
 

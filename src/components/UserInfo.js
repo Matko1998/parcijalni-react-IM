@@ -10,9 +10,9 @@ const UserInfo = ({ user }) => {
     <div>
       <img src={user.avatar_url} alt="Profilna slika" />
       <h2>{user.name}</h2>
-      <p><strong>Lokacija:</strong>{user.location}</p>
-      <p><strong>Detalji:</strong>{user.bio}</p>
-      <h3>Repositoriji:</h3>
+      <p><strong>Location:</strong>{user.location}</p>
+      <p><strong>Details:</strong>{user.bio}</p>
+      <h3>Repos:</h3>
       <ul>
         {user.repos.map((repo) => (
           <li key={repo.id}>{repo.name}</li>
